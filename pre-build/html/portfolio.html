@@ -28,7 +28,7 @@
                 <ul>
                     <li><a href="#section2"><span>01.</span>about</a></li>
                     <li><a href="#section3"><span>02.</span>publishing</a></li>
-                    <li><a href="#section4"><span>03.</span>script</a></li>
+                    <li><a href="#section4"><span>03.</span>personal</a></li>
                     <li><a href="#section5"><span>04.</span>animation</a></li>
                     <li><a href="#footer"><span>06.</span>contact</a></li>
                 </ul>
@@ -45,7 +45,7 @@
                     <ul>
                         <li><a href="#section2">about</a></li>
                         <li><a href="#section3">works</a></li>
-                        <li><a href="#section4">script</a></li>
+                        <li><a href="#section4">personal</a></li>
                         <li><a href="#section5">animation</a></li>
                         <li><a href="#footer">contact</a></li>
                     </ul>
@@ -98,12 +98,12 @@
                 <article class="about">
                     <div class="about_cont">
                         <div class="about_wrap">
-                            <strong>"프론트앤드 개발자를 꿈꾸는 저를 소개합니다."</strong>
-                            <p>하고자 하는 일에 있어서는 끊임없이 도전하고 직접 부딪혀보며 경험으로 성장하는 양선희입니다.<br/>
-                                제 손끝에서 하나 하나 채워지는 웹사이트가 너무나 새롭고 흥미로워 웹을 배워보자는 마음으로 공부하였습니다.<br/>
-                                아직 많이 부족하지만 빠르게 변화하는 시대에 맞춰 저또한 계속되는 공부와 자기계발을 통해
-                                도태되는 것이 아니라 더 멋진 내일이 올 수 있도록 발전해 나가고 남들보다 한 발 앞서 나가기 위해, 더 없이 성장하기 위해
-                                끊임없이 노력하는 프론트엔드 개발자가 되겠습니다. 감사합니다.
+                            <strong>"저를 소개합니다."</strong>
+                            <p>
+                                일상에서 자주 사용하는 웹페이지를 사용자를 생각해서 만드는 것을 보며 감명깊게 여겼고,<br/>
+                                사용자의 편의를 고려하며 개성을 표현하는 웹페이지를 만들고 싶어졌습니다. 그래서 저는 웹퍼블리셔의 길을 선택하였습니다.<br/>
+                                Html, css중급, vanila script, jquery에 포커스를 맞춰 구현하였습니다.<br/>
+                                sass를 활용하여 중복되는 css 구문을 제거하여 보다 깔끔한 반응형 웹을 구현하였고, <br/>Gulp를 활용한 html, scss, js 작업 파일을 관리하였으며 git, github를 통해 코드관리를 하였습니다.
                             </p>
                         </div>
                         <figure>
@@ -136,7 +136,7 @@
                                 <figure class="keyImg">
                                     <img src="../images/img/img-profile01.jpg" alt="keyword2">
                                 </figure>
-                            </div>CONTACT ME
+                            </div>
                         </div>
                         <div class="key_wrap">
                             <div class="reveal show" data-delay="500">
@@ -273,173 +273,38 @@
         <!-- section3 -->
         <section id="section4">
             <div class="sec4">
-                <h2 class="tit">SCRIPT</h2>
+                <h2 class="tit">PERSONAL<br/>SITE</h2>
                 <div class="javascriptCont" style="left: -217.113px;">
                     <article class="javascript">
                         <div class="script_cont">
                             <div class="script_wrap">
-                                <div class="keys">
-                                    <div data-key="65" class="key">
-                                        <kdd>A</kdd>
-                                        <span class="sound">clap</span>
-                                    </div>
-                                    <div data-key="83" class="key">
-                                        <kdd>S</kdd>
-                                        <span class="sound">hihat</span>
-                                    </div>
-                                    <div data-key="68" class="key">
-                                        <kdd>D</kdd>
-                                        <span class="sound">kick</span>
-                                    </div>
-                                    <div data-key="70" class="key">
-                                        <kdd>F</kdd>
-                                        <span class="sound">openhat</span>
-                                    </div>
-                                    <div data-key="71" class="key">
-                                        <kdd>G</kdd>
-                                        <span class="sound">boom</span>
-                                    </div>
-                                </div>
+                                <img src="../images/portfolio/personal01.png" alt="포트폴리오">
                             </div>
                             <div class="script_desc">
-                                <h3>Play the Piano</h3>
-                                <p>순수 100% Vanilla Javascript로 해당되는 키보드는 입력하면 드럼소리가 재생되는 건텐츠입니다.</p>
-                            </div>
-                            <audio data-key="65" src="assets/sounds/clap.wav"></audio>
-                            <audio data-key="83" src="assets/sounds/hihat.wav"></audio>
-                            <audio data-key="68" src="assets/sounds/kick.wav"></audio>
-                            <audio data-key="70" src="assets/sounds/openhat.wav"></audio>
-                            <audio data-key="71" src="assets/sounds/boom.wav"></audio>
-                        </div>
-                    </article>
-                    <article class="javascript">
-                        <div class="script_cont">
-                            <div class="script_wrap">
-                                <div class="music">
-                                    <div class="music_container" id="music_container">
-                                        <div class="music_info">
-                                            <h3 id="mTitle">IU</h3>
-                                            <div class="progress_container" id="progress_container">
-                                                <div class="progress" id="progress"></div>
-                                            </div>
-                                        </div>
-                                        <audio src="assets/sounds/IU.mp3" id="audio"></audio>
-                                        <div class="img_container">
-                                            <img src="assets/img/IU.jpeg" alt="music_cover" id="cover">
-                                        </div>
-                                        <div class="navigation">
-                                            <button id="prev" class="action_btn">
-                                                <i class="fa fa-backward" aria-hidden="true"></i>
-                                            </button>
-                                            <button id="play" class="action_btn action_btn_big">
-                                                <i class="fa fa-play" aria-hidden="true"></i>
-                                            </button>
-                                            <button id="next" class="action_btn">
-                                                <i class="fa fa-forward" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="script_desc">
-                                <h3>Play Music</h3>
-                                <p>javascript를 이용해 버튼을 누르면 음악이 재생되는 뮤직 플레이어 컨텐츠입니다.</p>
+                                <h3>First</h3>
+                                <p>Html, css중급, vanila script, jquery에 포커스를 맞춰 구현하였습니다. 메인페이지에는 인터렉티브한 Scroll모션, 탭메뉴, 네비게이션, 호버 모션을 구현하였고 서브페이지엔 Filckr 갤러리를 불러와 이미지를 나열하였으며 카카오맵 지도를 연동하여 주소를 나타내고 Youtube 동영상도 표출하여 나타냈습니다.</p>
                             </div>
                         </div>
                     </article>
                     <article class="javascript">
                         <div class="script_cont">
                             <div class="script_wrap">
-                                <div class="memory-game">
-                                    <div class="memory-card" data-framework="aurelia" style="order: 7;">
-                                        <img class="front-face" src="assets/img/aurelia.svg" alt="Aurelia">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                    <div class="memory-card" data-framework="aurelia" style="order: 5;">
-                                        <img class="front-face" src="assets/img/aurelia.svg" alt="Aurelia">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                    <div class="memory-card" data-framework="vue" style="order: 1;">
-                                        <img class="front-face" src="assets/img/vue.svg" alt="Vue">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                    <div class="memory-card" data-framework="vue" style="order: 2;">
-                                        <img class="front-face" src="assets/img/vue.svg" alt="vue">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                    <div class="memory-card" data-framework="angular" style="order: 5;">
-                                        <img class="front-face" src="assets/img/angular.svg" alt="Aurelia">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                    <div class="memory-card" data-framework="angular" style="order: 4;">
-                                        <img class="front-face" src="assets/img/angular.svg" alt="Aurelia">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                    <div class="memory-card" data-framework="ember" style="order: 1;">
-                                        <img class="front-face" src="assets/img/ember.svg" alt="ember">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                    <div class="memory-card" data-framework="ember" style="order: 6;">
-                                        <img class="front-face" src="assets/img/ember.svg" alt="ember">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                    <div class="memory-card" data-framework="backbone" style="order: 3;">
-                                        <img class="front-face" src="assets/img/backbone.svg" alt="backbone">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                    <div class="memory-card" data-framework="backbone" style="order: 0;">
-                                        <img class="front-face" src="assets/img/backbone.svg" alt="backbone">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                    <div class="memory-card" data-framework="react" style="order: 8;">
-                                        <img class="front-face" src="assets/img/react.svg" alt="react">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                    <div class="memory-card" data-framework="react" style="order: 10;">
-                                        <img class="front-face" src="assets/img/react.svg" alt="react">
-                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
-                                    </div>
-                                </div>
                             </div>
                             <div class="script_desc">
-                                <h3>Card Game</h3>
-                                <p>Javascript를 이용해 같은 그림의 카드를 맞추는 게임 컨텐츠입니다.</p>
+                                <h3>Second</h3>
+                                <p>하늘색이 포인트컬러인 사이트로 가로방향, 세로방향 등 다양한 방향의 슬라이더를 넣었으며 Scroll모션에 따라 이미지가 순차적으로 표출되도록 제작하였습니다. </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="javascript">
+                        <div class="script_cont">
+                            <div class="script_wrap">
+                            </div>
+                            <div class="script_desc">
+                                <h3>Third</h3>
+                                <p>텍스트 및 인물이미지에 에니메이션을 넣어 역동적이게 표현하였고 배너이미지가 자동으로 흘러가게끔 순수 javascript로 제작하였습니다.</p>
                             </div>
                     </div></article>
-                    <article class="javascript">
-                        <div class="script_cont">
-                            <div class="script_wrap">
-                                <div class="calculatorCont">
-                                    <div class="calculator">
-                                        <input type="text" placeholder="0" id="output-screen">
-                                        <button onclick="Clear()">Cl</button>
-                                        <button onclick="dle()">DEL</button>
-                                        <button onclick="display('%')">%</button>
-                                        <button onclick="display('/')">/</button>
-                                        <button onclick="display('7')">7</button>
-                                        <button onclick="display('8')">8</button>
-                                        <button onclick="display('9')">9</button>
-                                        <button onclick="display('*')">*</button>
-                                        <button onclick="display('4')">4</button>
-                                        <button onclick="display('5')">5</button>
-                                        <button onclick="display('6')">6</button>
-                                        <button onclick="display('-')">-</button>
-                                        <button onclick="display('1')">1</button>
-                                        <button onclick="display('2')">2</button>
-                                        <button onclick="display('3')">3</button>
-                                        <button onclick="display('+')">+</button>
-                                        <button onclick="display('.')">.</button>
-                                        <button onclick="display('0')">0</button>
-                                        <button onclick="Calculate()" class="equal">=</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="script_desc">
-                                <h3>Calcutator</h3>
-                                <p>Javascript를 이용해 계산기를 제작하였습니다.</p>
-                            </div>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
@@ -543,7 +408,7 @@
             <div class="contact_bottom">
                 끝까지 봐주셔서 감사합니다.
             </div>
-            <div class="copy">JUHYEJI © 2021PORTFOLIO</div>
+            <div class="copy">SUNHEE © 2021PORTFOLIO</div>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
