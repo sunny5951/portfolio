@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+/* mediaquery */
+
+/* 화면너비 0-1024px */
+@media (max-width: 1024px) {
+    section article {padding-top: 70px}
+
+    .about_wrap strong {font-size: 20px}
+    .about_wrap p {font-size: 14px}
+
+    .skill_svg {margin-bottom: 0}
+    .skill_svg svg {height: 220px}
+    .skill_desc p {font-size: 40px}
+
+    .key_desc {font-size: 14px}
+
+    .sec3 {padding: 200px 0 120px 0}
+    .pro_desc {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #section4 {height: 700vh}
+    .script_cont {width: 85%}
+    .script_wrap {width: 65%; height: 460px}
+    .script_desc {width: 30%}
+
+    .sec5 {padding: 120px 0}
+    .ani_wrap {height: 350px}
+
+    .coding_desc p {margin-bottom: 25px}
+
+    .comment-list div {width: 32%}
+
+    .footer .desc {font-size: 25px}
+    .f_left figure {width: 90%}
+}
+
+/* 화면너비 0-768px */
+@media (max-width: 768px) {
+    section > div {padding-top: 100px}
+    .inner {
+        max-width: 90%;
+        margin: 0 5%
+    }
+    .tit {font-size: 9vw}
+    #header {height: 70px}
+    #logo span {width: 55px; height: 55px; padding: 7px; margin: 7px;
+        font-size: 25px;
+        border: 3px solid #fff;
+    }
+    #nav {display: none}
+    #mNav {display: block}
+    #sns {display: none}
+
+    .sec1 {
+        text-align: center;
+        justify-content: center
+    }
+    .text h2 {font-size: 9.5vw}
+
+    .sec2 .tit {text-align: center}
+    .about_cont {display: block}
+    .about_wrap {width: 100%; text-align: center}
+    .about_wrap strong {font-size: 22px}
+    .about_wrap p {font-size: 17px}
+    .about_cont figure img {display: none}
+
+    .skill h3 {font-size: 40px}
+    .skill_svg svg {height: 185px}
+    .skill_desc p {font-size: 30px}
+    .skill_desc em {font-size: 16px}
+
+    .key_cont:first-of-type {display: block}
+    .key_desc {width: 100%; margin-bottom: 2.5%; font-size: 16px}
+    .key_desc br {display: none}
+    .key_wrap {width: 100%}
+    .key_wrap strong {padding: 10px; font-size: 8vw}
+    .key_cont:first-of-type .key_wrap {width: 100%}
+    .key_cont:last-of-type .key_wrap:nth-of-type(1) {width: calc((100% - 5%) / 3)}
+    .key_cont:last-of-type .key_wrap:nth-of-type(2) {width: calc((100% - 5%) / 3)}
+    .key_cont:last-of-type .key_wrap:nth-of-type(3) {width: calc((100% - 5%) / 3)}
+    .key_cont:last-of-type strong {font-size: 3vw}
+    .key_cont:last-of-type .key_wrap:nth-child(2) strong {font-size: 3vw}
+
+    .sec3 {padding: 100px 0}
+    .pro_desc h4 {font-size: 4vw}
+    .pro_desc p {font-size: 16px}
+    .pro_desc a.more {font-size: 14px}
+
+    #section4 {max-width: 100%; height: auto}
+    .sec4 {width: 90%; margin: 0 5%;
+        position: static;
+    }
+    .sec4 .tit {color: #000; -webkit-text-stroke: none}
+    .javascriptCont {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        display: block;
+        position: static;
+    }
+    .javascript {width: 100%; height: auto; display: block}
+    .script_cont {width: 100%; display: block}
+    .script_wrap {width: 100%; margin-bottom: 20px}
+    .script_desc {width: 100%}
+    .script_desc h3 {font-size: 4vw}
+    .script_desc p {font-size: 17px}
+
+    .animation {display: block}
+    .ani_cont {width: 100%}
+    .ani_desc h3 {font-size: 4vw}
+    .ani_desc p {font-size: 17px}
+
+    .coding_cont {display: block}
+    .coding_cont figure {width: 100%}
+    .coding_desc {width: 100%; margin-top: 20px}
+    .coding_desc h4 {font-size: 4vw}
+    .coding_desc p {font-size: 17px; margin-bottom: 20px}
+    .coding_desc a.more {font-size: 14px}
+
+    .comment_wrap {display: block}
+    .comment_wrap div {margin-right: 0%}
+    .comment_wrap input {width: 100%; margin-bottom: 20px}
+
+    .footer .tit {text-align: center}
+    .footer .desc {text-align: center}
+    .f_cont {display: block}
+    .f_left {width: 70%; margin: 0 auto 30px auto}
+    .f_right {width: 100%}
+}
+
+
+/* 화면너비 0-600px */
+@media (max-width: 600px) {
+    .tit {font-size: 12vw}
+    .text h2 {font-size: 13.5vw}
+
+    .skill h3 {margin-bottom: 40px; text-align: center}
+    .skill_cont {display: block}
+    .skill_wrap {width: 100%; margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skill_svg {width: 35%}
+    .skill_svg svg {height: 140px;}
+    .skill_desc {width: 35%}
+
+    .key_desc {text-align: center}
+    .key_cont {display: block}
+    .key_cont:last-of-type .key_wrap:nth-of-type(1){width: 100%; margin-bottom: 2.5%}
+    .key_cont:last-of-type .key_wrap:nth-of-type(2){width: 100%; margin-bottom: 2.5%}
+    .key_cont:last-of-type .key_wrap:nth-of-type(3){width: 100%}
+    .key_cont:last-of-type strong {font-size: 8vw}
+    .key_cont:last-of-type .key_wrap:nth-child(2) strong {font-size: 8vw}
+
+    .script_wrap {height: 350px}
+    .script_wrap > div {height: 300px}
+    .key {width: 18%; margin: 5px; padding: 20px 10px}
+    .sound {font-size: 10px}
+    .img_container img {left: -50px}
+    .calculator {grid-template-columns: repeat(4, 58px)}
+    .calculator input {width: 230px; height: 35px; font-size: 20px}
+    .calculator button {width: 30px; height: 30px; margin: 3px; font-size: 10px}
+
+    .comment_wrap .text .inputText {min-width: 450px}
+    .comment-list div {width: 48%}
+    .comment-list div p {font-size: 15px}
+    .comment-list div span {font-size: 15px}
+}
+
+/* 화면너비 0-480px */
+@media (max-width: 480px) {
+    .text p {font-size: 16px}
+
+    .about_wrap strong {font-size: 18px}
+    .about_wrap p {padding-top: 30px}
+
+    .skill h3 {margin-bottom: 10px}
+    .skill_svg {width: 50%}
+    .skill_desc {width: 50%}
+
+    .pro_desc h4 {font-size: 7vw}
+
+    .keys {flex-direction: column}
+    .key {width: 50%; height: 30px; padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .key kdd {margin-right: 10px; font-size: 10px}
+    .img_container {width: 75px}
+    .img_container img {height: 75px; left: 0; bottom: 50px}
+    .script_desc h3 {font-size: 7vw}
+    .ani_desc h3 {font-size: 7vw}
+    .coding_desc h4 {font-size: 7vw}
+
+    .comment_wrap .text .inputText {min-width: 335px}
+    .comment-list div {width: 100%}
+
+}
+
+/* 화면너비 0-320px */
+@media (max-width: 320px) {
+    .text p {font-size: 13px}
+
+    .about_wrap strong {font-size: 15px}
+    .about_wrap p {padding-top: 20px; font-size: 13px}
+
+    .key_desc {font-size: 14px}
+
+    .pro_desc p {font-size: 13px}
+    .script_desc p {font-size: 13px}
+    .ani_desc p {font-size: 13px}
+    .coding_desc p {font-size: 13px}
+
+    .calculator {grid-template-columns: repeat(4, 50 px)}
+    .calculator input {width: 230px}
+
+    .ani_wrap {height: 300px}
+
+    .comment_wrap input {width: 100%}
+    .comment_wrap .text .inputText {min-width: 285px}
+
+    .f_mail {padding: 20px}
+    .f_mail input,
+    .f_mail textarea {font-size: 12px}
+    .f_mail .f_btn {font-size: 12px}
+}

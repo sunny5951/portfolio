@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body id="body">
+    <div id="skip">
+        <a href="#">본문바로가기</a>
+    </div>
+    <div class="loading_wrap active">
+        <ul>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+        </ul>
+        <span>Loading...</span>
+    </div>
+    <header id="header" class="">
+        <h1 id="logo"><a href="#section1"><span>PO</span></a></h1>
+        <div id="nav">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#section2"><span>01.</span>about</a></li>
+                    <li><a href="#section3"><span>02.</span>publishing</a></li>
+                    <li><a href="#section4"><span>03.</span>script</a></li>
+                    <li><a href="#section5"><span>04.</span>animation</a></li>
+                    <li><a href="#footer"><span>06.</span>contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="mNav">
+            <div class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mNav_cont">
+                <nav>
+                    <ul>
+                        <li><a href="#section2">about</a></li>
+                        <li><a href="#section3">works</a></li>
+                        <li><a href="#section4">script</a></li>
+                        <li><a href="#section5">animation</a></li>
+                        <li><a href="#footer">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mList">
+                    <ul>
+                        <li><a href="https://github.com/sunny5951" target="_blank"><i class="fa-brands fa-git-square"></i></a></li>
+                        <li><a href="https://velog.io/@sunhee5951" target="_blank"><i class="fa fa-book" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- nav -->
+    </header>
+    <!-- header -->
+    <aside id="sns" class="">
+        <div class="list">
+            <ul>
+                <li><a href="https://github.com/sunny5951" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></li>
+                <li><a href="https://velog.io/@sunhee5951" target="_blank"><i class="fa fa-book" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </aside>
+    <main id="content">
+        <section id="section1">
+            <div class="sec1 inner">
+                <div class="scroll">
+                    <span>scroll</span>
+                </div>
+                <div class="text">
+                    <h2>
+                        <strong class="split" aria-label="WELCOME TO MY"><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">W</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">E</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">L</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">C</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">O</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">M</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">E</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;"> </span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">T</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">O</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;"> </span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">M</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">Y</span></strong>
+                        <em class="split" aria-label="PORTFOLIO"><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">P</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">O</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">R</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">T</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">F</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">O</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">L</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">I</span><span aria-hidden="true" style="transform: translate(0px, 0px); opacity: 1;">O</span></em>
+                    </h2>
+                    <p>안녕하세요. 저의 포트폴리오에 오신 것을 환영합니다.<br>
+                        준비한 작업들과 제 노력의 결과물을 보실 수 있습니다.<br>
+                        편안하게 보시며 즐겨주세요. 감사합니다 :)
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- section1 -->
+        <section id="section2">
+            <div class="sec2 inner show">
+                <h2 class="tit">ABOUT ME</h2>
+                <article class="about">
+                    <div class="about_cont">
+                        <div class="about_wrap">
+                            <strong>"프론트앤드 개발자를 꿈꾸는 저를 소개합니다."</strong>
+                            <p>하고자 하는 일에 있어서는 끊임없이 도전하고 직접 부딪혀보며 경험으로 성장하는 양선희입니다.<br/>
+                                제 손끝에서 하나 하나 채워지는 웹사이트가 너무나 새롭고 흥미로워 웹을 배워보자는 마음으로 공부하였습니다.<br/>
+                                아직 많이 부족하지만 빠르게 변화하는 시대에 맞춰 저또한 계속되는 공부와 자기계발을 통해
+                                도태되는 것이 아니라 더 멋진 내일이 올 수 있도록 발전해 나가고 남들보다 한 발 앞서 나가기 위해, 더 없이 성장하기 위해
+                                끊임없이 노력하는 프론트엔드 개발자가 되겠습니다. 감사합니다.
+                            </p>
+                        </div>
+                        <figure>
+                            <img src="../images/img/짱구.jpg" alt="aboutme">
+                        </figure>
+                    </div>
+                </article>
+                <!-- about -->
+                <article class="keyword">
+                    <h3 class="ir_su">Keyword</h3>
+                    <div class="key_cont">
+                        <p class="key_desc show">저는 사용성 있는<br> 웹 페이지를 만들기 위해 노력하고 있습니다.<br>
+                            더 나은 결과물이 나올 수 있도록 끊임없이 고민하고<br> 어려운일이 있어도 책임감을 가지고
+                            끝까지 헤쳐나가겠습니다.<br> 앞으로도 계속되는 도전속에서 오는 수많은 위기와 어려움을<br>
+                            포기하지 않고 최선을 다해 발전하는<br> 프론트엔드 개발자가 되겠습니다.
+                        </p>
+                        <div class="key_wrap">
+                            <div class="reveal show">
+                                <strong>#Creative</strong>
+                                <figure class="keyImg">
+                                    <img src="../images/img/img-profile04.png" alt="keyword1">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="key_cont">
+                        <div class="key_wrap">
+                            <div class="reveal show">
+                                <strong>#Responsible</strong>
+                                <figure class="keyImg">
+                                    <img src="../images/img/img-profile01.jpg" alt="keyword2">
+                                </figure>
+                            </div>CONTACT ME
+                        </div>
+                        <div class="key_wrap">
+                            <div class="reveal show" data-delay="500">
+                                <strong>#Sociable</strong>
+                                <figure class="keyImg">
+                                    <img src="../images/img/img-profile03.jpg" alt="keyword3">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="key_wrap">
+                            <div class="reveal show" data-delay="500">
+                                <strong>#Positive</strong>
+                                <figure class="keyImg">
+                                    <img src="../images/img/img-profile02.jpg" alt="keyword4">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- keyword -->
+            </div>
+        </section>
+        <!-- section2 -->
+        <section id="section3">
+            <div class="sec3 inner">
+                <h2 class="tit">PUBLISHING<br>PROJECT</h2>
+                <article class="project active">
+                    <h3 class="num">01</h3>
+                    <div class="pro_cont">
+                        <figure>
+                            <img src="../images/portfolio/산림빅데이터.png" alt="project1">
+                        </figure>
+                        <div class="pro_desc">
+                            <div>
+                                <h4>Webstandard Site</h4>
+                                <p>'산림빅데이터' 공공기관 사이트이며 웹표준을 준수하며 반응형으로 제작되었습니다.</p>
+                            </div>
+                            <a href="https://www.bigdata-forest.kr/frn/index" target="_blank" class="more">VIEW SITE</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project active">
+                    <h3 class="num">02</h3>
+                    <div class="pro_cont">
+                        <figure>
+                            <img src="../images/portfolio/이북5도.png" alt="project2">
+                        </figure>
+                        <div class="pro_desc">
+                            <div>
+                                <h4>Webaccessibility Site</h4>
+                                <p>'이북5도위원회' 공공기관 사이트이며 웹접근성 기반으로 제작된 반응형 사이트입니다.</p>
+                            </div>
+                            <a href="www.ibuk5do.go.kr" target="_blank" class="more">VIEW SITE</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 class="num">03</h3>
+                    <div class="pro_cont">
+                        <figure>
+                            <img src="../images/portfolio/경산시민소통.png" alt="project3">
+                        </figure>
+                        <div class="pro_desc">
+                            <div>
+                                <h4>WebResponsive Site</h4>
+                                <p>'경산시민소통' 공공기관 사이트이며 반응형으로 제작되었습니다.</p>
+                            </div>
+                            <a href="https://map.gbgs.go.kr/sp/cmm/web/index.do" target="_blank" class="more">VIEW SITE</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 class="num">04</h3>
+                    <div class="pro_cont">
+                        <figure>
+                            <img src="../images/portfolio/바로처리센터.png" alt="project4">
+                        </figure>
+                        <div class="pro_desc">
+                            <div>
+                                <h4>Interactive Site</h4>
+                                <p>'바로처리센터' 사이트이고, 주사위가 굴러다니며 인터렉티브한 웹사이트입니다.</p>
+                            </div>
+                            <a href="https://baro.lx.or.kr/main.do" target="_blank" class="more">VIEW SITE</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 class="num">05</h3>
+                    <div class="pro_cont">
+                        <figure>
+                            <img src="../images/portfolio/임업진흥원.png" alt="project5">
+                        </figure>
+                        <div class="pro_desc">
+                            <div>
+                                <h4>Gis Site</h4>
+                                <p>Gis 지도기반 사이트이며 반응형으로 제작되었습니다.</p>
+                            </div>
+                            <a href="https://gis.forestdata.kr/" target="_blank" class="more">VIEW SITE</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 class="num">06</h3>
+                    <div class="pro_cont">
+                        <figure>
+                            <img src="../images/portfolio/LX지적통합지도.png" alt="project6">
+                        </figure>
+                        <div class="pro_desc">
+                            <div>
+                                <h4>Gis Site</h4>
+                                <p>Gis 지도기반 사이트이며 반응형으로 제작되었습니다.</p>
+                            </div>
+                            <a href="#" target="_blank" class="more">VIEW SITE</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 class="num">07</h3>
+                    <div class="pro_cont">
+                        <figure>
+                            <img src="../images/portfolio/통합플랫폼.png" alt="project7">
+                        </figure>
+                        <div class="pro_desc">
+                            <div>
+                                <h4>Webstandard Site</h4>
+                                <p>'LX통합플랫폼' 사이트이며 웹표준을 준수하며 제작되었습니다.</p>
+                            </div>
+                            <a href="#" target="_blank" class="more">VIEW SITE</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- section3 -->
+        <section id="section4">
+            <div class="sec4">
+                <h2 class="tit">SCRIPT</h2>
+                <div class="javascriptCont" style="left: -217.113px;">
+                    <article class="javascript">
+                        <div class="script_cont">
+                            <div class="script_wrap">
+                                <div class="keys">
+                                    <div data-key="65" class="key">
+                                        <kdd>A</kdd>
+                                        <span class="sound">clap</span>
+                                    </div>
+                                    <div data-key="83" class="key">
+                                        <kdd>S</kdd>
+                                        <span class="sound">hihat</span>
+                                    </div>
+                                    <div data-key="68" class="key">
+                                        <kdd>D</kdd>
+                                        <span class="sound">kick</span>
+                                    </div>
+                                    <div data-key="70" class="key">
+                                        <kdd>F</kdd>
+                                        <span class="sound">openhat</span>
+                                    </div>
+                                    <div data-key="71" class="key">
+                                        <kdd>G</kdd>
+                                        <span class="sound">boom</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="script_desc">
+                                <h3>Play the Piano</h3>
+                                <p>순수 100% Vanilla Javascript로 해당되는 키보드는 입력하면 드럼소리가 재생되는 건텐츠입니다.</p>
+                            </div>
+                            <audio data-key="65" src="assets/sounds/clap.wav"></audio>
+                            <audio data-key="83" src="assets/sounds/hihat.wav"></audio>
+                            <audio data-key="68" src="assets/sounds/kick.wav"></audio>
+                            <audio data-key="70" src="assets/sounds/openhat.wav"></audio>
+                            <audio data-key="71" src="assets/sounds/boom.wav"></audio>
+                        </div>
+                    </article>
+                    <article class="javascript">
+                        <div class="script_cont">
+                            <div class="script_wrap">
+                                <div class="music">
+                                    <div class="music_container" id="music_container">
+                                        <div class="music_info">
+                                            <h3 id="mTitle">IU</h3>
+                                            <div class="progress_container" id="progress_container">
+                                                <div class="progress" id="progress"></div>
+                                            </div>
+                                        </div>
+                                        <audio src="assets/sounds/IU.mp3" id="audio"></audio>
+                                        <div class="img_container">
+                                            <img src="assets/img/IU.jpeg" alt="music_cover" id="cover">
+                                        </div>
+                                        <div class="navigation">
+                                            <button id="prev" class="action_btn">
+                                                <i class="fa fa-backward" aria-hidden="true"></i>
+                                            </button>
+                                            <button id="play" class="action_btn action_btn_big">
+                                                <i class="fa fa-play" aria-hidden="true"></i>
+                                            </button>
+                                            <button id="next" class="action_btn">
+                                                <i class="fa fa-forward" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="script_desc">
+                                <h3>Play Music</h3>
+                                <p>javascript를 이용해 버튼을 누르면 음악이 재생되는 뮤직 플레이어 컨텐츠입니다.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="javascript">
+                        <div class="script_cont">
+                            <div class="script_wrap">
+                                <div class="memory-game">
+                                    <div class="memory-card" data-framework="aurelia" style="order: 7;">
+                                        <img class="front-face" src="assets/img/aurelia.svg" alt="Aurelia">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                    <div class="memory-card" data-framework="aurelia" style="order: 5;">
+                                        <img class="front-face" src="assets/img/aurelia.svg" alt="Aurelia">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                    <div class="memory-card" data-framework="vue" style="order: 1;">
+                                        <img class="front-face" src="assets/img/vue.svg" alt="Vue">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                    <div class="memory-card" data-framework="vue" style="order: 2;">
+                                        <img class="front-face" src="assets/img/vue.svg" alt="vue">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                    <div class="memory-card" data-framework="angular" style="order: 5;">
+                                        <img class="front-face" src="assets/img/angular.svg" alt="Aurelia">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                    <div class="memory-card" data-framework="angular" style="order: 4;">
+                                        <img class="front-face" src="assets/img/angular.svg" alt="Aurelia">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                    <div class="memory-card" data-framework="ember" style="order: 1;">
+                                        <img class="front-face" src="assets/img/ember.svg" alt="ember">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                    <div class="memory-card" data-framework="ember" style="order: 6;">
+                                        <img class="front-face" src="assets/img/ember.svg" alt="ember">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                    <div class="memory-card" data-framework="backbone" style="order: 3;">
+                                        <img class="front-face" src="assets/img/backbone.svg" alt="backbone">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                    <div class="memory-card" data-framework="backbone" style="order: 0;">
+                                        <img class="front-face" src="assets/img/backbone.svg" alt="backbone">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                    <div class="memory-card" data-framework="react" style="order: 8;">
+                                        <img class="front-face" src="assets/img/react.svg" alt="react">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                    <div class="memory-card" data-framework="react" style="order: 10;">
+                                        <img class="front-face" src="assets/img/react.svg" alt="react">
+                                        <img class="back-face" src="assets/img/js-badge.svg" alt="Jsbadge">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="script_desc">
+                                <h3>Card Game</h3>
+                                <p>Javascript를 이용해 같은 그림의 카드를 맞추는 게임 컨텐츠입니다.</p>
+                            </div>
+                    </div></article>
+                    <article class="javascript">
+                        <div class="script_cont">
+                            <div class="script_wrap">
+                                <div class="calculatorCont">
+                                    <div class="calculator">
+                                        <input type="text" placeholder="0" id="output-screen">
+                                        <button onclick="Clear()">Cl</button>
+                                        <button onclick="dle()">DEL</button>
+                                        <button onclick="display('%')">%</button>
+                                        <button onclick="display('/')">/</button>
+                                        <button onclick="display('7')">7</button>
+                                        <button onclick="display('8')">8</button>
+                                        <button onclick="display('9')">9</button>
+                                        <button onclick="display('*')">*</button>
+                                        <button onclick="display('4')">4</button>
+                                        <button onclick="display('5')">5</button>
+                                        <button onclick="display('6')">6</button>
+                                        <button onclick="display('-')">-</button>
+                                        <button onclick="display('1')">1</button>
+                                        <button onclick="display('2')">2</button>
+                                        <button onclick="display('3')">3</button>
+                                        <button onclick="display('+')">+</button>
+                                        <button onclick="display('.')">.</button>
+                                        <button onclick="display('0')">0</button>
+                                        <button onclick="Calculate()" class="equal">=</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="script_desc">
+                                <h3>Calcutator</h3>
+                                <p>Javascript를 이용해 계산기를 제작하였습니다.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- section4 -->
+        <section id="section5">
+            <div class="sec5 inner">
+                <h2 class="tit">ANIMATION</h2>
+                <div class="animation">
+                    <article class="ani_cont">
+                        <div class="ani_wrap">
+                            <div class="pulse">
+                                <i class="fa fa-bell" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="ani_desc">
+                            <h3>Pulse Effect</h3>
+                            <p>transform initial-scale을 이용해 리듬에 맞게 그림자처럼 점점 처지는 원을 나타내었습니다,</p>
+                        </div>
+                    </article>
+                    <article class="ani_cont">
+                        <div class="ani_wrap">
+                            <div class="jump">
+                                <span>H</span>
+                                <span>E</span>
+                                <span>L</span>
+                                <span>L</span>
+                                <span>O</span>
+                            </div>
+                        </div>
+                        <div class="ani_desc">
+                            <h3>Jumping Text</h3>
+                            <p>Transform translateY 값을 이용해 위 아래로 덤트하는 움직임을 나타내었습니다.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="animation">
+                    <article class="ani_cont">
+                        <div class="ani_wrap">
+                            <div class="square">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <div class="square_cont">
+                                    <p>Hi!There!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ani_desc">
+                            <h3>Circle Rotation</h3>
+                            <p>원을 만들어 Trasnform rotate값을 이용해 3개의 원이 각각 겹치지 않게 움직이도록 나타내었습니다</p>
+                        </div>
+                    </article>
+                    <article class="ani_cont">
+                        <div class="ani_wrap">
+                            <div class="loader">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="ani_desc">
+                            <h3>Creative Loader</h3>
+                            <p>9개의 Box 형태를 만들어 transform scale을 통해 시간차 별로 커지고 작아지는 움직임을 나타내었습니다.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- section5 -->
+    </main>
+    <footer id="footer">
+        <div class="footer inner contact_box">
+            <h3>"종합적인 역량을 갖춘 웹퍼블리셔"</h3>
+            <p>멈추지 않는 성실함과 도전정신으로 사용자의 가치있는 경험을 만들어 내고,<br>동료들의 신뢰를 받으며 같이 성장해나가는 팀의 일원이 되겠습니다!</p>
+            <div class="contact_email">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff">
+                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/>
+                    </svg>
+                    E-MAIL
+                </h3>
+                sunhee5951@naver.com
+            </div> <!-- .contact_email -->
+            <div class="contact_hp">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff">
+                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/>
+                    </svg>
+                    PHONE
+                </h3>
+                010-2888-5951
+            </div> <!-- .contact_hp -->
+            <div class="contact_bottom">
+                끝까지 봐주셔서 감사합니다.
+            </div>
+            <div class="copy">JUHYEJI © 2021PORTFOLIO</div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
