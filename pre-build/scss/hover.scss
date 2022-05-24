@@ -1,5 +1,21 @@
 @charset "utf-8";
 
 @media (hover:hover){
+  /* nav */
+  .nav li:hover a{color: #ffc400;
+    &::after{width: 100%}
+  }
+  .mNav_cont li a:hover {
+      color: skyblue;
+      text-decoration: underline
+  }
+  .mList li:hover {background-color: skyblue;
+    a{color: #000;}
+  }
 
+  .list li:hover a, .list li:hover a svg path {color: #ffc400;}
+
+  #sns .list li:hover a svg path{fill: #ffc400;}
+
+  .reveal figure:hover img {transform: scale(1.1)}
 }

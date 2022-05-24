@@ -129,6 +129,10 @@
     .f_cont {display: block}
     .f_left {width: 70%; margin: 0 auto 30px auto}
     .f_right {width: 100%}
+
+    .contact_box h3, .contact_email{font-size: 7vw;}
+    .contact_box p{font-size: 17px;line-height: 25px}
+    .contact_box svg{width: 20px;}
 }
 
 
@@ -228,4 +232,6 @@
     .f_mail input,
     .f_mail textarea {font-size: 12px}
     .f_mail .f_btn {font-size: 12px}
+
+
 }
