@@ -31,7 +31,7 @@ section article {padding-top: 100px}
 /* header */
 #header {
     width: 96%; height: 90px;z-index: 5000; opacity: 0;display: flex;justify-content: space-between;align-items: center;position: fixed; left: 2%; top: 25px;
-    border: 1px solid #2e2e2e;backdrop-filter: blur(5px);animation: header 1s ease-in-out forwards;animation-delay: 2.5s;
+    border: 1px solid #2e2e2e;backdrop-filter: blur(5px);animation: header 1s ease-in-out forwards;//animation-delay: 2.5s;
     &.active{
         #logo span {color: #000; border: 5px solid #000}
         .nav li a{color: #000;
@@ -104,7 +104,7 @@ section article {padding-top: 100px}
 #sns {
     width: 90px; height: 80vh; padding-bottom: 5vh; z-index: 5000; opacity: 0;
     display: flex;justify-content: center;align-items: flex-end;position: fixed; left: 2%; top: 114px;border: 1px solid #2e2e2e;border-top: 0;
-    backdrop-filter: blur(5px);animation: sns 1.5s ease-in-out forwards;animation-delay: 2.7s;
+    backdrop-filter: blur(5px);animation: sns 1s ease-in-out forwards;//animation-delay: 2.7s;
     &.active{
         .list li a {color: #000}
         .list li a svg path{fill: #000;}

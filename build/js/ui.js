@@ -14,7 +14,7 @@ $(document).ready(function(){
             y: 0,
             stagger: 0.1
         })
-    }, 500)
+    }, 1000)
 
 
     document.querySelectorAll(".nav ul li a").forEach(li => {
@@ -156,7 +156,36 @@ $(document).ready(function(){
 
     // section4 (num)
 
+    function getSectionPoint() {
+    const section = document.querySelector('#section3')
+    const sections = document.querySelectorAll('.project');
+    const thisPoint = document.documentElement.scrollTop;
 
+    for (let i = 0; i < sections.length; i++) {
+        let number = 250; //margin-bottom
+
+        if (thisPoint >= (section.offsetTop + sections[0].offsetTop) && thisPoint <= (section.offsetTop + section.clientHeight)) {
+
+            let point = sections[0].offsetTop + Math.abs(sections[0].getBoundingClientRect().top);
+            const num = document.querySelectorAll('.num');
+
+            // console.log(sections[0].getBoundingClientRect().top);
+            // console.log("sections.offsetTop : " + sections[0].offsetTop);
+
+            if ((sections[i].offsetTop - number) <= point) {
+                if (Number(num[i].textContent) > 1) {
+                    sections[i - 1].classList.remove('active');
+                    sections[i].classList.add('active');
+                } else {
+                    sections[i].classList.add('active');
+                }
+            } else {
+                sections[i].classList.remove('active');
+            }
+        }
+    }
+}
+window.addEventListener('scroll', getSectionPoint);
 
     // section4 (5)
 
